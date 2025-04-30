@@ -1,0 +1,133 @@
+[
+    {
+        "mahasiswa":{
+            "nama": "Nama Mahasiswa",
+            "nim": "NIM Mahasiswa",
+            "email": "Email Mahasiswa",
+            "tugas_akhir": {
+                "judut": "Judul Tugas Akhir",
+                "status": "Status Pengerjaan Tugas Akhir"
+            }
+        },
+        "mahasiswa_dosen":{
+            "wali": {
+                "nama": "Nama Dosen Wali",
+                "alias": "Inisial Dosen Wali"
+            },
+            "kp": {
+                "nama": "Nama Dosen KP",
+                "alias": "Inisial Dosen KP"
+            },
+            "pembimbing1": {
+                "nama": "Nama Dosen Pembimbing 1",
+                "alias": "Inisial Dosen Pembimbing 2"
+            },
+            "pembimbing2": {
+                "nama": "Nama Dosen Pembimbing 2",
+                "alias": "Inisial Dosen Pembimbing 2"
+            },
+            "penguji1": {
+                "nama": "Nama Dosen Penguji 1",
+                "alias": "Inisial Dosen Penguji 1"
+            },
+            "penguji2": {
+                "nama": "Nama Dosen Penguji 2",
+                "alias": "Inisial Dosen Penguji 2"
+            }
+        }   
+    },
+    {
+        "dosen": {
+        "id": "NIP/NRP Dosen",
+        "name": "Nama Dosen",
+        "alias": "3 Kata Inisial Dosen",
+        "email": "Email Dosen",
+        "status_kehadiran": "hadir",
+        "ketersediaan_bimbingan": true
+        },
+        "waktu_bimbingan": [
+            {
+                "id": "ID Waktu Bimbingan",
+                "tanggal": "Tanggal Bimbingan",
+                "waktu_mulai": "Waktu Mulai Bimbingan",
+                "waktu_selesai": "Waktu Selesai Bimbingan",
+                "jumlah_bimbingan": "Jumlah Bimbingan",
+                
+                "antrian_bimbingan": {
+                    "id_antrian": "ID Antrian Bimbingan",
+                    
+                    "mahasiswa":[
+                        {
+                            "nama": "Nama Mahasiswa",
+                            "nim": "NIM Mahasiswa"
+                        },
+                        {
+                            "nama": "Nama Mahasiswa",
+                            "nim": "NIM Mahasiswa"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ID Waktu Bimbingan",
+                "tanggal": "Tanggal Bimbingan",
+                "waktu_mulai": "Waktu Mulai Bimbingan",
+                "waktu_selesai": "Waktu Selesai Bimbingan",
+                "jumlah_bimbingan": "Jumlah Bimbingan",
+
+                "antrian_bimbingan":{
+                    "id_antrian": {
+                        "mahasiswa":[]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "Daftar Mahasiswa":[
+            {
+                "id": "ID Relation MahasiswaDosen",
+                "nama": "Nama Mahasiswa from Mahasiswa.Nama",
+                "nim": "NIM Mahasiswa",
+                "role": "Role MahasiswaDosen"
+            },
+            {
+                "id": "ID Relation MahasiswaDosen",
+                "nama": "Nama Mahasiswa from Mahasiswa.Nama",
+                "nim": "NIM Mahasiswa",
+                "role": "Role MahasiswaDosen"
+            }
+        ]
+    },
+    {
+        "layanan_id": "",
+        "layanan_jenis": "", 
+        "layanan_file" : "",
+        "layanan_status" :""
+
+    },
+    {
+        "mahasiswa_nim": "str",
+        "jenis_layanan_id": "int",
+        "status" : "str",
+        "catatan_admin" : "str",
+        "jadwal_pengambilan" : "datetime",
+        "lampiran":{
+            "lampiran_id": "UUID",
+            "nama_dokumen": "str",
+            "file_url": "str"
+        }
+    },
+    {
+        "antrian_id": "int",
+        "posisi": "int",
+        "message": "str",
+        "antrian": {
+            "nim": "str",
+            "nomor_induk": "str",
+            "waktu_id": "int",
+            "status_antrian": "Optional[str] = Menunggu"
+        },
+        "file": "Recent File Schemas We Make"
+    }
+]
